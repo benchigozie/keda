@@ -118,6 +118,12 @@ nav {
 .h3-bottom-pad {
     gap: 40px;
 }
+.section-pad {
+    padding-bottom: 160px;
+}
+.sec-width {
+    width: 65%;
+}
 .home-text {
     font-size: 1.9em;
 }
@@ -339,6 +345,28 @@ h1 {
     width: 100%;
     height: 65px;
 }
+.article {
+    height: 100px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.articles-section {
+    align-items: center;
+}
+.browse-articles-button {
+    background-color: var(--dark);
+    color: var(--main-background);
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+}
+.browse-articles-button:hover {
+    background-color: var(--keda-orange);
+    transition: 0.2s ease-in;
+}
 @keyframes left-ease {
     from {
         left: -100%;
@@ -384,7 +412,7 @@ h1 {
     .head-image {
         height: 500px;
     }
-    .experience-div, .cert, .services, .happy-customers {
+    .experience-div, .cert, .services, .happy-customers, .sec-width {
         width: 80%;
     }
     .service {
@@ -419,7 +447,7 @@ h1 {
     #nav-cta {
         display: none;
     }
-    .experience-div, .cert, .services, .happy-customers {
+    .experience-div, .cert, .services, .happy-customers, .sec-width {
         width: 90%;
     }
     .service-div {
@@ -430,6 +458,9 @@ h1 {
     }
     .happy-customers {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .article {
+        height: 130px;
     }
     
 }   
@@ -446,6 +477,11 @@ h1 {
     .cert-icon {
         width: 25px;
         height: 25px;
+    }
+    .article {
+        font-weight: 0.7em;
+        height: 180px;
+        gap: 10px;
     }
 }
 
@@ -464,11 +500,14 @@ h1 {
     .head-image {
         height: 460px;
     }
-    .experience-div, .cert, .services, , .happy-customers {
+    .experience-div, .cert, .services, .happy-customers, .sec-width {
         width: 93%;
     }
     .happy-customers {
         gap: 15px;
+    }
+    .article {
+        height: 200px;
     }
 
 } 
