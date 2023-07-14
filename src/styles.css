@@ -1,0 +1,475 @@
+:root {
+    --dark: rgb(0, 0, 0);
+    --main-background: rgb(255, 255, 255);
+    --keda-orange: rgb(160, 67, 13);
+  }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--main-background);
+    font-family: "Montserrat";
+    color: var(--dark);
+}
+.white-text {
+    color: var(--main-background);
+}
+.orange-text {
+    color: var(--keda-orange);
+}
+.italicize {
+    font-style: italic;
+}
+.ease {
+    transition: 0.1s ease-in;
+}
+.small-text{
+    font-size: 0.9em;
+}
+.tiny-text {
+    font-size: 0.75em;
+}
+.medium-text{
+    font-size: 1.3em;
+}
+.big-text {
+    font-size: 1.8em;
+}
+.large-text{
+    font-size: 2.4em;
+}
+.f200 {
+    font-weight: 200;
+}
+.f300 {
+    font-weight: 300;
+}
+.f400 {
+    font-weight: 400;
+}
+.f500 {
+    font-weight: 500;
+}
+.f600 {
+    font-weight: 600;
+}
+.f700 {
+    font-weight: 700;
+}
+.f800 {
+    font-weight: 800;
+}
+.f900 {
+    font-weight: 900;
+}
+.center-text {
+    text-align: center;
+}
+.pointer {
+    cursor: pointer;
+}
+nav {
+    height: 70px;
+    background-color: var(--main-background);
+    padding: 0px max(10%, 50px);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.flex {
+    display: flex;
+}
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sb-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sa-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.left-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.row-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.thin-border {
+    border: 1px solid var(--dark);
+}
+.h3-bottom-pad {
+    gap: 40px;
+}
+.home-text {
+    font-size: 1.9em;
+}
+.nav-ul {
+    list-style: none;
+}
+.nav-links {
+    width: min(40%, 380px);
+}
+.nav-link:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in;
+}
+.nav-link a:hover {
+    color: var(--keda-orange);
+}
+button {
+    cursor: pointer;
+}
+.cta-button button {
+    border: 2px var(--dark) solid;
+    outline: none;
+    background-color: var(--main-background);
+    width: 130px;
+    height: 40px;
+    font-size: 0.9em;
+}
+.cta-button button:hover {
+    color: var(--keda-orange);
+    border: 2px var(--keda-orange) solid;
+}
+.hamburger {
+    row-gap: 5px;
+    display: none;
+}
+.hamburger.active :nth-child(1){
+    transform: translateY(9px) rotate(45deg);
+}
+.hamburger.active :nth-child(2){
+    opacity: 0;
+}
+.hamburger.active :nth-child(3){
+    transform: translateY(-9px) rotate(-45deg);
+}
+.bar {
+    width: 25px;
+    height: 4px;
+    background-color: var(--dark);
+    border-radius: 2px;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+section {
+    top: 70px;
+    position: relative;
+}
+.expand-ham {
+    background-color: var(--main-background); 
+    position: fixed;
+    top: 65px;
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+    height: 400px;
+    flex-direction: column;
+    gap: 20px;
+    display: flex;
+    left: -100%;
+    transition: 0.3s ease-in;
+    opacity: 0;
+}
+.expand-ham.active {
+    left: 0;
+    opacity: 1;
+}
+#head-section {
+    padding: 0px 10px;
+}
+.head-text {
+    width: 35%;
+    column-gap: 30px;
+    position: relative;
+    animation: left-ease 1.5s ease-in;
+}
+.head-supplement {
+    gap: 6px;
+}
+.head-image{
+    height: 550px;
+    overflow: hidden;
+}
+.head-image-div {
+    position: relative;
+    animation: opaque 1s ease-in;
+}
+.head-image img{
+    object-fit: cover;
+    height: 700px;
+}
+h1 {
+    font-size: 2.6em;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.cta-black-button button {
+    border: 2px var(--dark) solid;
+    outline: none;
+    background-color: var(--dark);
+    color: var(--main-background);
+    width: 130px;
+    height: 40px;
+    font-size: 0.9em;
+}
+.cta-black-button button:hover {
+    background-color: var(--keda-orange);
+    border: 2px var(--keda-orange) solid;
+}
+.banner-display {
+    background-color: var(--dark);
+    height: 55px;
+    gap: 6px;
+}
+.about-him {
+    gap: min(8%, 30px);
+    padding: 100px max(30px, 6%);
+    align-items: flex-start;
+
+}
+.doings-div {
+    width: min(400px, 50%);
+    overflow: hidden;
+    coolum-gap: 8px;/*note*/
+}
+.him-name-div {
+    width: min(450px, 39%);
+    overflow: hidden;
+}
+.no-display {
+    display: none;
+}
+.experience-section {
+    align-items: center;
+    padding-bottom: 150px;
+}
+.experience-div, .cert {
+    width: 65%;
+    height: 90px;
+}
+.experience-item {
+    width: 33.3%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 2px;
+}
+.experience-item:nth-child(2) {
+    background-color: var(--dark);
+}
+.certs-section, .experience-section{
+    padding-bottom: 200px;
+}
+.certs-head {
+    padding-bottom: 20px;
+}
+.cert-icon {
+    background-color: var(--dark);
+    width: 35px;
+    height: 35px;
+}
+.certs {
+    align-items: center;
+}
+.cert {
+    column-gap: 20px;
+    padding: 0 30px;
+}
+.port-folio-section {
+    height: 600px;
+}
+.services-section {
+    align-items: center;
+    padding-bottom: 150px;
+ 
+}
+.service {
+    height: 110px;
+    padding: 15px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.service:nth-child(3) {
+    color: var(--main-background);
+    background-color: var(--dark);
+}
+.service-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.happy-customers-div {
+    
+}
+.services {
+    width: 65%;
+}
+.happy-customers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    width: 65%;
+}
+.customer {
+    width: 100%;
+    height: 65px;
+}
+@keyframes left-ease {
+    from {
+        left: -100%;
+        opacity: 0;
+    }
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+@keyframes right-ease {
+    from {
+        right: -60%;
+        opacity: 0;
+    }
+    to {
+        right: 0;
+        opacity: 1;
+
+    }
+}
+
+@keyframes opaque {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+
+    }
+}
+
+@media (max-width: 1000px) {
+    .head-text, .head-image-div{
+        width: 45%;
+        
+    }
+    .head-image img {
+        width: 100%;
+        object-fit: contain;
+        height: 500px;
+    }
+    .head-image {
+        height: 500px;
+    }
+    .experience-div, .cert, .services, .happy-customers {
+        width: 80%;
+    }
+    .service {
+        height: 120px;
+    }
+
+}     
+
+
+@media (max-width: 800px) {
+
+    .hamburger {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+    }
+    #head-section {
+        flex-direction: column-reverse;
+        row-gap: 15px;
+        padding: 0 0 30px 0;
+        
+    }
+    .head-image-div, .head-text, .doings-div, .him-name-div{
+        width: 90%;
+
+    }
+   
+    .about-him{
+        flex-direction: column;
+    }
+    #nav-cta {
+        display: none;
+    }
+    .experience-div, .cert, .services, .happy-customers {
+        width: 90%;
+    }
+    .service-div {
+        grid-template-columns: 1fr;
+    }
+    .service {
+        padding: 15px 30px;
+    }
+    .happy-customers {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}   
+
+@media (max-width: 500px) {
+    .certs, .experience-div {
+        font-size: 12px;
+    }
+    .cert {
+        padding: 0 15px;
+        column-gap: 10px;
+        height: 70px;
+    }
+    .cert-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 400px) {
+    
+    .head-image img {
+        width: 100%;
+        object-fit: cover;
+        height: 450px;
+        object-position: 0 90px;
+    }
+    .head-image-div, .head-text, .doings-div, .him-name-div{
+        width: 93%;
+
+    }
+    .head-image {
+        height: 460px;
+    }
+    .experience-div, .cert, .services, , .happy-customers {
+        width: 93%;
+    }
+    .happy-customers {
+        gap: 15px;
+    }
+
+} 
+                
