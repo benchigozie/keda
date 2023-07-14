@@ -2,6 +2,7 @@
     --dark: rgb(0, 0, 0);
     --main-background: rgb(255, 255, 255);
     --keda-orange: rgb(160, 67, 13);
+    --keda-grey : rgb(214, 205, 205);
   }
 * {
     padding: 0;
@@ -366,6 +367,32 @@ h1 {
 .browse-articles-button:hover {
     background-color: var(--keda-orange);
     transition: 0.2s ease-in;
+}
+.email-section {
+    height: 200px;
+    background-color: var(--keda-grey);
+}
+.mail {
+    outline: none;
+    border: 1px solid var(--dark);
+    width: 250px;
+    height: 35px;
+    background-color: var(--keda-grey);
+}
+.mail:hover {
+    border: 2px solid var(--keda-orange);
+}
+.mail:focus {
+    border: 2px solid var(--keda-orange);
+}
+.send-mail-button {
+    width: 80px;
+    height: 35px;
+    outline: none;
+    border: none;
+    background-color: var(--dark);
+    color: var(--main-background);
+
 }
 @keyframes left-ease {
     from {
