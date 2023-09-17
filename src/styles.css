@@ -11,7 +11,7 @@
 }
 body {
     background-color: var(--main-background);
-    font-family: "Montserrat";
+    font-family: sans-serif;
     color: var(--dark);
 }
 .white-text {
@@ -26,6 +26,10 @@ body {
 .ease {
     transition: 0.1s ease-in;
 }
+.slow-ease {
+    transition: 0.4s ease-in;
+}
+
 .small-text{
     font-size: 0.9em;
 }
@@ -259,7 +263,7 @@ h1 {
 .doings-div {
     width: min(400px, 50%);
     overflow: hidden;
-    coolum-gap: 8px;/*note*/
+    column-gap: 8px;/*note*/
 }
 .him-name-div {
     width: min(450px, 39%);
